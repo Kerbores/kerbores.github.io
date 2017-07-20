@@ -716,3 +716,6 @@ textarea {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
+.lead{
+	text-indent: 42px;
+}
