@@ -15,13 +15,20 @@
 		// Fixed header
 		//-----------------------------------------------
 		$(window).scroll(function() {
-			if (($(".header.fixed").length > 0)) {
+			/*if (($(".header.fixed").length > 0)) {
 				if(($(this).scrollTop() > 0) && ($(window).width() > 767)) {
 					$("body").addClass("fixed-header-on");
+					$('.navbar-fixed-top').addClass('opacity1');
 				} else {
 					$("body").removeClass("fixed-header-on");
+					$('.navbar-fixed-top').removeClass('opacity1');
 				}
-			};
+			};*/
+			if(($(this).scrollTop() > 0)){
+				$('.navbar-fixed-top').addClass('opacity1');
+			}else{
+				$('.navbar-fixed-top').removeClass('opacity1');
+			}
 		});
 
 		$(window).load(function() {
